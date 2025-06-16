@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/2025PDWeekSchedule/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PD Week Schedule Website</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="/2025PDWeekSchedule/styles/style.css" />
+    <script type="module" crossorigin src="/2025PDWeekSchedule/assets/index-CvB4Xo3i.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function () {
+        let elems = document.querySelectorAll('.collapsible');
+        let instances = M.Collapsible.init(elems);
+
+        async function delNodes(nList) {
+          await nList.forEach((n) => n.remove());
+        }
+
+        const day1Links = document.querySelectorAll(
+          '.day-1 > .card-action > a'
+        );
+        const day2Links = document.querySelectorAll(
+          '.day-2 > .card-action > a'
+        );
+        const day3Links = document.querySelectorAll(
+          '.day-3 > .card-action > a'
+        );
+        const day4Links = document.querySelectorAll(
+          '.day-4 > .card-action > a'
+        );
+        const day5Links = document.querySelectorAll(
+          '.day-5 > .card-action > a'
+        );
+
+        const allMatsDay1Links = document.querySelectorAll('.day1-all-links');
+        const allMatsDay2Links = document.querySelectorAll('.day2-all-links');
+        const allMatsDay3Links = document.querySelectorAll('.day3-all-links');
+        const allMatsDay4Links = document.querySelectorAll('.day4-all-links');
+        const allMatsDay5Links = document.querySelectorAll('.day5-all-links');
+
+        const allLinks = document.querySelectorAll('.all-links');
+        let now = new Date();
+        let today = now.getDate();
+        let thisMonth = now.getMonth();
+
+        const day1Date = new Date(2023, 5, 26);
+        const day2Date = new Date(2023, 5, 27);
+        const day3Date = new Date(2023, 5, 28);
+        const day4Date = new Date(2023, 5, 29);
+        const day5Date = new Date(2023, 5, 30);
+
+        if (now < day1Date) {
+          // console.log("It's not day one, deleting all links...");
+          delNodes([
+            ...day1Links,
+            ...day2Links,
+            ...day3Links,
+            ...day4Links,
+            ...day5Links,
+            ...allMatsDay1Links,
+            ...allMatsDay2Links,
+            ...allMatsDay3Links,
+            ...allMatsDay4Links,
+            ...allMatsDay5Links,
+          ]);
+        } else if (now < day2Date) {
+          // console.log("It's not day 2 deleting day 2+");
+          delNodes([
+            ...day2Links,
+            ...day3Links,
+            ...day4Links,
+            ...day5Links,
+            ...allMatsDay2Links,
+            ...allMatsDay3Links,
+            ...allMatsDay4Links,
+            ...allMatsDay5Links,
+          ]);
+        } else if (now < day3Date) {
+          // console.log("It's not day 3 deleting day 3+");
+          delNodes([
+            ...day3Links,
+            ...day4Links,
+            ...day5Links,
+            ...allMatsDay3Links,
+            ...allMatsDay4Links,
+            ...allMatsDay5Links,
+          ]);
+        } else if (now < day4Date) {
+          // console.log("It's not day 4 deleting day 4+");
+          delNodes([
+            ...day4Links,
+            ...day5Links,
+            ...allMatsDay4Links,
+            ...allMatsDay5Links,
+          ]);
+        } else if (now < day5Date) {
+          // console.log("It's not day 5 deleting day 5+");
+          delNodes([...day5Links, ...allMatsDay5Links]);
+        } else {
+          console.log("It's day 5 not deleting anything");
+        }
+
+        const activities = document.querySelectorAll(
+          '.sched-item > .card-content'
+        );
+        for (let act of activities) {
+          let actSize = parseInt(act.querySelector('.hidden').innerText);
+          let increase = 60 * (actSize / 15 - 1);
+          act.style.height = `${120 + increase}px`;
+        }
+      });
+    </script>
+  </body>
+</html>
