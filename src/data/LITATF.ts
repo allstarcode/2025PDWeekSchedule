@@ -1,5 +1,3 @@
-import type { Schedule } from 'src';
-
 export const allData: Schedule = [
   {
     daynum: '1',

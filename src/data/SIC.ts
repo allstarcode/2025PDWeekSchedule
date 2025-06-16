@@ -1,4 +1,3 @@
-import type { Schedule } from 'src';
 
 export const allData: Schedule = [
   {
