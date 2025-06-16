@@ -101,6 +101,7 @@
       <div class="title mainheader">
         <img id="titleAsterik" src={asterik} alt="ASC Asterik" />
         All Star Code PD Week Schedule
+        <img id="titleAsterik" src={asterik} alt="ASC Asterik" />
       </div>
     </div>
   </div>
