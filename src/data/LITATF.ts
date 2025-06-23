@@ -8,13 +8,7 @@ export const allData: Schedule = [
         time: '10:00AM - 10:15AM',
         duration: '15',
         actType: 'coreskill',
-        links: [
-          {
-            displayText: 'Presentation Slides',
-            linkURL:
-              'https://docs.google.com/presentation/d/14idMwiIDgjb0VtQNEXgm2spPubfZzKV-U-PRXWSOfME/edit?usp=sharing',
-          },
-        ],
+        links: [{ displayText: 'Presentation Slides', linkURL: 'Link1 URL' }],
       },
       {
         name: 'What is PD Week?',
@@ -442,7 +436,13 @@ export const allData: Schedule = [
         time: '12:00PM - 01:00PM',
         duration: '60',
         actType: 'codealong',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://drive.google.com/file/d/1yYHNk3dnjaYpeayZivGKucQ_UK5kxWl2/view?usp=sharing',
+          },
+        ],
       },
       {
         name: 'LUNCH',

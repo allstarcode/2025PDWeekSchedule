@@ -237,11 +237,17 @@ export const allData: Schedule = [
         links: [],
       },
       {
-        name: 'SIC Session',
+        name: 'A Day In the Life',
         time: '02:00PM - 02:45PM',
         duration: '45',
         actType: 'lecture',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1_pptrLDTlsVcz-7KNurvWzu-nvom6tHGoGNLI9KnOJ0/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'BREAK',
@@ -251,11 +257,30 @@ export const allData: Schedule = [
         links: [],
       },
       {
-        name: 'SIC Session',
-        time: '03:00PM - 04:15PM',
-        duration: '75',
+        name: 'Tools for the Job',
+        time: '03:00PM - 03:30PM',
+        duration: '30',
         actType: 'lecture',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1_pptrLDTlsVcz-7KNurvWzu-nvom6tHGoGNLI9KnOJ0/edit?usp=sharing',
+          },
+        ],
+      },
+      {
+        name: 'Attendance Policy',
+        time: '03:30PM - 04:15PM',
+        duration: '45',
+        actType: 'lecture',
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1hrFAfMuhHE9WqZ4D_RvZYMJ33ehS2BVLVfDMiSGRatY/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'Exit Survey',
@@ -423,7 +448,13 @@ export const allData: Schedule = [
         time: '12:00PM - 01:00PM',
         duration: '60',
         actType: 'codealong',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://drive.google.com/file/d/1yYHNk3dnjaYpeayZivGKucQ_UK5kxWl2/view?usp=sharing',
+          },
+        ],
       },
       {
         name: 'LUNCH',
@@ -433,11 +464,30 @@ export const allData: Schedule = [
         links: [],
       },
       {
-        name: 'SIC Session',
-        time: '02:00PM - 03:00PM',
-        duration: '60',
+        name: 'Stakeholder Management',
+        time: '02:00PM - 02:30PM',
+        duration: '30',
         actType: 'lecture',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1xClqeDyE5GfVJH7UT9CtF7RwV2DW5s8pOTqqo0J8Fis/edit?usp=sharing',
+          },
+        ],
+      },
+      {
+        name: 'Code of the Week',
+        time: '02:30PM - 03:00PM',
+        duration: '30',
+        actType: 'lecture',
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1J47oAeCnMkNACTt9TpYUv_YjqPOhU0MIZwHwwv0rO-k/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'BREAK',
@@ -481,11 +531,17 @@ export const allData: Schedule = [
         links: [],
       },
       {
-        name: 'SIC Session',
+        name: 'SIC IEP Deep Dive',
         time: '11:15AM - 12:15PM',
         duration: '60',
         actType: 'lecture',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1k8sL-Ics_wCnOnMTItmZ_GJyG1jmas2Cda8wF4G50lk/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'BREAK',
@@ -495,11 +551,17 @@ export const allData: Schedule = [
         links: [],
       },
       {
-        name: 'SIC Session',
+        name: 'Volunteer Engagement',
         time: '12:30PM - 01:30PM',
         duration: '60',
         actType: 'lecture',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1B266tLBu2qJq3C4Effs_mHMNHJ1AulE6ETzUXgfw36U/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'LUNCH',
@@ -546,7 +608,7 @@ export const allData: Schedule = [
         links: [],
       },
       {
-        name: 'SIC Session',
+        name: 'Wrap Up/Material Review',
         time: '04:30PM - 05:00PM',
         duration: '30',
         actType: 'lecture',
