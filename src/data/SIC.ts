@@ -213,7 +213,13 @@ export const allData: Schedule = [
         time: '11:15AM - 11:45AM',
         duration: '30',
         actType: 'codealong',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1enf1bEnjdrp3qbRZpZ8mTsmAdUrgwIc9jtP0nBTSvgI/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'BREAK',
@@ -227,7 +233,13 @@ export const allData: Schedule = [
         time: '12:00PM - 01:00PM',
         duration: '60',
         actType: 'codealong',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1enf1bEnjdrp3qbRZpZ8mTsmAdUrgwIc9jtP0nBTSvgI/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'LUNCH',
@@ -321,7 +333,13 @@ export const allData: Schedule = [
         time: '10:45AM - 11:45AM',
         duration: '60',
         actType: 'codealong',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1pOr0QgN0eZdneuyogW0ULTuj2MXgHhVp4f_x-ZHCziw/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'BREAK',
@@ -335,7 +353,13 @@ export const allData: Schedule = [
         time: '12:00PM - 01:00PM',
         duration: '60',
         actType: 'codealong',
-        links: [],
+        links: [
+          {
+            displayText: 'Presentation Slides',
+            linkURL:
+              'https://docs.google.com/presentation/d/1pOr0QgN0eZdneuyogW0ULTuj2MXgHhVp4f_x-ZHCziw/edit?usp=sharing',
+          },
+        ],
       },
       {
         name: 'LUNCH',
