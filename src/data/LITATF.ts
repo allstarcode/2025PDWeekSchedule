@@ -497,7 +497,7 @@ export const allData: Schedule = [
       },
       {
         name: 'Orientation',
-        time: '04:00PM - 06:00PM',
+        time: '06:00PM - 08:00PM',
         duration: '120',
         actType: 'project',
         links: [],
